@@ -1,6 +1,6 @@
 from Bots.Bot import Bot
 
-class BotZangado(Bot):
+class BotFeliz(Bot):
     def __init__(self, nome):
         super().__init__(nome)
 
