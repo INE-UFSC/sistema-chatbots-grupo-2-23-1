@@ -2,18 +2,10 @@ from Bots.Bot import Bot
 
 class BotTriste(Bot):
     def __init__(self,nome):
-        super.__init__(nome)
-
-    @property
-    def nome(self):
-        return super().nome
-
-    @nome.setter
-    def nome(self,nome):
-        super().nome(nome)
+        super().__init__(nome)
 
     def apresentacao(self):
-        print(f"Sniff. Meu nome é {self.__nome} e tenho tristeza crônica.")
+        print(f"Sniff. Meu nome é {self.nome} e tenho tristeza crônica.")
     
     def mostra_comandos(self):
         print("1 - Bom dia!!!")
@@ -25,7 +17,7 @@ class BotTriste(Bot):
         if cmd == "1":
             print(" Sniff. Porque você esta tão feliz em uma terça feira de manhã ?")
         elif cmd == "2":
-            print(f" Talvez você não tenha escutado porque não falo alto por causa da ansiedade social, mas meu nome é {self.__nome}")
+            print(f" Talvez você não tenha escutado porque não falo alto por causa da ansiedade social, mas meu nome é {self.nome}")
         elif cmd == "3":
             print("A solidão é, antes de mais nada, restauradora. Um descanso da vida social, dos deveres sociais, das máscaras que vestimos tantas vezes em público. Ela é necessária, para revigorar, repousar. \
                  Roubei essa frase de Nietzsche para parecer inteligente, mas meu conhecimento é pífio que nem minha vida.")

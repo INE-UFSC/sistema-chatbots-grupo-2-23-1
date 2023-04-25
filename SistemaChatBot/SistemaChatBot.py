@@ -30,10 +30,13 @@ class SistemaChatBot:
         self.__bot = self.__lista_bots[escolha] 
 
     def mostra_comandos_bot(self):
-        self.__bot.mostra_comando()
+
+        self.__bot.mostra_comandos()
 
     def le_envia_comando(self):
         while True:
+            self.__bot.mostra_comandos()
+
             comando_num = int(input('Digite o comando desejado (ou -1 para sair): '))
 
             if comando_num == -1:
