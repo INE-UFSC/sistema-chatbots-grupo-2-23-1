@@ -15,18 +15,27 @@ class BotTriste(Bot):
     
     def executa_comando(self,cmd):
         if cmd == "1":
-            print(" Sniff. Porque você esta tão feliz em uma terça feira de manhã ?")
+            print("")
+            print("--> Sniff. Porque você esta tão feliz em uma terça feira de manhã ?")
+            print("")
         elif cmd == "2":
-            print(f" Talvez você não tenha escutado porque não falo alto por causa da ansiedade social, mas meu nome é {self.nome}")
+            print("")
+            print(f"--> Talvez você não tenha escutado porque não falo alto por causa da ansiedade social, mas meu nome é {self.nome}")
+            print("")
         elif cmd == "3":
-            print("A solidão é, antes de mais nada, restauradora. Um descanso da vida social, dos deveres sociais, das máscaras que vestimos tantas vezes em público. Ela é necessária, para revigorar, repousar. \
+            print("")
+            print("--> A solidão é, antes de mais nada, restauradora. Um descanso da vida social, dos deveres sociais, das máscaras que vestimos tantas vezes em público. Ela é necessária, para revigorar, repousar. \
                  Roubei essa frase de Nietzsche para parecer inteligente, mas meu conhecimento é pífio que nem minha vida.")
+            print("")
         elif cmd == "4":
-            self.despedida()
-            exit()
+            BotTriste.despedida()
     
     def boas_vindas(self):
-        print("Fico tão contente que você me escolheu, finalmente vou falar com alguém!")
+        print("")
+        print("--> Fico tão contente que você me escolheu, finalmente vou falar com alguém!")
+        print("")
 
     def despedida(self):
-        print("Não me deixe sozinho por favor!!!")
+        print("")
+        print("--> Não me deixe sozinho por favor!!!")
+        print("")

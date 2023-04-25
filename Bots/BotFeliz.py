@@ -15,18 +15,25 @@ class BotFeliz(Bot):
         
     
     def executa_comando(self,cmd):
-        if cmd == "1":
-            print("Como posso ajudá-lo?")
-        elif cmd == "2":
-            print(f"Meu nome é {self.nome}.")
-        elif cmd == "3":
-            print("Não tenha medo de ser você mesmo e vá em busca dos seus sonhos.")
-        elif cmd == "4":
-            self.despedida()
-            exit()
-            
+        if cmd == 1:
+            print("")
+            print("--> Como posso ajudá-lo?")
+            print("")
+        elif cmd == 2:
+            print("")
+            print(f"--> Meu nome é {self.nome}.")
+            print("")
+        elif cmd == 3:
+            print("")
+            print("--> Não tenha medo de ser você mesmo e vá em busca dos seus sonhos.")
+            print("")
+        elif cmd == 4:
+            print("")
+            print("--> Tchau e até a próxima.")
+            print("")
+
     def boas_vindas(self):
-        print(f"- - > {self.nome} diz: Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.")
+        print(f"--> Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.")
 
     def despedida(self):
-        print(f"- - > {self.nome} diz: Foi um prazer ajudar")
+        print(f"--> Foi um prazer ajudar")

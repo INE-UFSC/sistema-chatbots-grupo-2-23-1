@@ -15,17 +15,26 @@ class BotMetrossexual(Bot):
     
     def executa_comando(self,cmd):
         if cmd == "1":
-            print("Bom dia pra ken ??? Hahahaha, te peguei.")
+            print("")
+            print("--> Bom dia pra ken ??? Hahahaha, te peguei.")
+            print("")
         elif cmd == "2":
-            print(f"Metrossexual de plástico, ou {self.nome}, ás vezes amor da sua vida.")
+            print("")
+            print(f"--> Metrossexual de plástico, ou {self.nome}, ás vezes amor da sua vida.")
+            print("")
         elif cmd == "3":
-            print("Tome 1 grama de whey protein por kilo de massa corporal. Me agradeça depois.")
+            print("")
+            print("--> Tome 1 grama de whey protein por kilo de massa corporal. Me agradeça depois.")
+            print("")
         elif cmd == "4":
             self.despedida()
-            exit()
     
     def boas_vindas(self):
-        print("Tá saindo da jaula o monstro!")
+        print("")
+        print("--> Tá saindo da jaula o monstro!")
+        print("")
 
     def despedida(self):
-        print("Pode ir, sei que vai voltar. BIRL!")
+        print("")
+        print("--> Pode ir, sei que vai voltar. BIRL!")
+        print("")
