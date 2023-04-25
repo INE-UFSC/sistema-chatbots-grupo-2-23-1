@@ -2,15 +2,15 @@ from Bots.Bot import Bot
 
 class BotTriste(Bot):
     def __init__(self,nome):
-        super().__init__(nome)
+        super.__init__(nome)
 
     @property
     def nome(self):
-        return self.__nome
+        return super.nome()
 
     @nome.setter
-    def nome(self):
-        self.__nome = "Cleber"
+    def nome(self,nome):
+        self.__nome = nome
 
     def apresentacao(self):
         print(f"Sniff. Meu nome é {self.__nome} e tenho tristeza crônica.")
