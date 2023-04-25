@@ -5,20 +5,22 @@ import random as r
 
 class Bot(ABC):
 
-    def __init__(nome,):
-        self.nome = nome
-        self.comandos = {}
+    def __init__(nome):
+        self.__nome = nome
+        self.__comandos = {}
 
     #nao esquecer o decorator
+    @property
     def nome(self):
-        pass
+        return self.__nome
 
     #nao esquecer o decorator
-    def nome(nome):
-        pass
+    @nome.setter
+    def nome(self,nome):
+        self.__nome = nome
 
     def mostra_comandos(self):
-        pass
+        print(self.__comandos)
 
     @abstractmethod
     def executa_comando(self,cmd):
