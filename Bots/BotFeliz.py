@@ -9,11 +9,11 @@ class BotFeliz(Bot):
 
     @nome.setter
     def nome(self, nome):
-        super.nome(nome)
+        super().nome(nome)
 
     @property
     def nome(self):
-        super.nome()
+        super().nome()
 
     def mostra_comandos(self):
         print("1 - Boas vindas.")
