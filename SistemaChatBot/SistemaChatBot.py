@@ -1,34 +1,66 @@
 from Bots.Bot import Bot
 
 class SistemaChatBot:
-    def __init__(self,nomeEmpresa,lista_bots):
-        self.__empresa=nomeEmpresa
-        ##verificar se a lista de bots contém apenas bots
-        self.__lista_bots=lista_bots
+    def __init__(self, nomeEmpresa, lista_bots):
+        self.__empresa = nomeEmpresa
+
+        for bot in lista_bots:
+            if not isinstance(bot, Bot):
+                raise TypeError('Objeto presente na lista de bots não é um bot.')
+
+        self.__lista_bots = lista_bots
         self.__bot = None
-    
+
     def boas_vindas(self):
-        pass
-        ##mostra mensagem de boas vindas do sistema
+        print(f'Saudações, este é o sistema de chatbots integrados da {self.__empresa}.')
 
     def mostra_menu(self):
-        pass
-        ##mostra o menu de escolha de bots
-    
+        print(f'Os chatbots disponíveis são:')
+
+        for (i, bot) in enumerate(self.__lista_bots):
+            print(f'{i} - Bot: {bot.nome} - Apresentação: ', end='')
+            bot.apresentacao()
+
     def escolhe_bot(self):
-        pass
-        ##faz a entrada de dados do usuário e atribui o objeto ao atributo __bot 
+        escolha = int(input('Digite o número do bot desejado: '))
+
+        if escolha < 0 or escolha > len(self.__lista_bots):
+            raise IndexError(f'Bot com número {escolha} não está na lista.')
+
+        self.__bot = self.__lista_bots[escolha] 
 
     def mostra_comandos_bot(self):
-        pass
-        ##mostra os comandos disponíveis no bot escolhido
+        self.__bot.mostra_comando()
 
     def le_envia_comando(self):
-        pass
-        ##faz a entrada de dados do usuário e executa o comando no bot ativo
+        while True:
+            comando_num = int(input('Digite o comando desejado (ou -1 para sair): '))
+
+            if comando_num == -1:
+                break
+
+            try:
+                comando = self.__bot.comandos[comando_num]
+            except IndexError:
+                raise IndexError('Comando não disponível not chatbot.')
+
+            self.__bot.executa_comando(comando)
 
     def inicio(self):
-        pass
+        self.boas_vindas()
+
+        print()
+
+        self.mostra_menu()
+
+        self.escolhe_bot()
+
+        self.__bot.boas_vindas()
+
+        self.le_envia_comando()
+
+        self.__bot.despedida()
+
         ##mostra mensagem de boas-vindas do sistema
         ##mostra o menu ao usuário
         ##escolha do bot      
