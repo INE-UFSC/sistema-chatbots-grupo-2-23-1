@@ -5,7 +5,7 @@ class BotFeliz(Bot):
         super().__init__(nome)
 
     def apresentacao(self):
-        print("Olá, sou o Reef e te amo!!!")
+        print(f"Olá, sou o {self.__nome} e te amo!!!")
 
     @nome.setter
     def nome(self, nome):
@@ -26,14 +26,14 @@ class BotFeliz(Bot):
         if cmd == 1:
             print("Como posso ajudá-lo?")
         elif cmd == 2:
-            print("Meu nome é Reef.")
+            print(f"Meu nome é {self.__nome}.")
         elif cmd == 3:
             print("Não tenha medo de ser você mesmo e vá em busca dos seus sonhos.")
         elif cmd == 4:
             print("Tchau e até a próxima.")
             
     def boas_vindas(self):
-        print("- - > Reef diz: Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.")
+        print(f"- - > {self.__nome} diz: Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.")
 
     def despedida(self):
-        print("- - > Reef diz: Foi um prazer ajudar")
+        print(f"- - > {self.__nome} diz: Foi um prazer ajudar")
