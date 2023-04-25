@@ -43,11 +43,9 @@ class SistemaChatBot:
                 break
 
             try:
-                comando = self.__bot.comandos[comando_num]
+                self.__bot.executa_comando(str(comando_num))
             except IndexError:
                 raise IndexError('Comando não disponível not chatbot.')
-
-            self.__bot.executa_comando(comando)
 
     def inicio(self):
         self.boas_vindas()

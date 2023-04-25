@@ -22,7 +22,8 @@ class BotTriste(Bot):
             print("A solidão é, antes de mais nada, restauradora. Um descanso da vida social, dos deveres sociais, das máscaras que vestimos tantas vezes em público. Ela é necessária, para revigorar, repousar. \
                  Roubei essa frase de Nietzsche para parecer inteligente, mas meu conhecimento é pífio que nem minha vida.")
         elif cmd == "4":
-            BotTriste.despedida()
+            self.despedida()
+            exit()
     
     def boas_vindas(self):
         print("Fico tão contente que você me escolheu, finalmente vou falar com alguém!")

@@ -21,7 +21,8 @@ class BotMetrossexual(Bot):
         elif cmd == "3":
             print("Tome 1 grama de whey protein por kilo de massa corporal. Me agradeça depois.")
         elif cmd == "4":
-            BotMetrossexual.despedida()
+            self.despedida()
+            exit()
     
     def boas_vindas(self):
         print("Tá saindo da jaula o monstro!")
