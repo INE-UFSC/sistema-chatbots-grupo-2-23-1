@@ -6,11 +6,11 @@ class BotTriste(Bot):
 
     @property
     def nome(self):
-        return super.nome()
+        return super().nome
 
     @nome.setter
     def nome(self,nome):
-        self.__nome = nome
+        super().nome(nome)
 
     def apresentacao(self):
         print(f"Sniff. Meu nome é {self.__nome} e tenho tristeza crônica.")
