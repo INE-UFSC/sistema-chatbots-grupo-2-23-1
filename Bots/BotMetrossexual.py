@@ -1,5 +1,6 @@
 from Bots.Bot import Bot
 
+
 class BotMetrossexual(Bot):
     def __init__(self,nome):
         super().__init__(nome)
@@ -28,6 +29,7 @@ class BotMetrossexual(Bot):
             print("")
         elif cmd == "4":
             self.despedida()
+            exit()
     
     def boas_vindas(self):
         print("")

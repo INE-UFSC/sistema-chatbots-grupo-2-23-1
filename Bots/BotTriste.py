@@ -1,5 +1,6 @@
 from Bots.Bot import Bot
 
+
 class BotTriste(Bot):
     def __init__(self,nome):
         super().__init__(nome)
@@ -28,7 +29,8 @@ class BotTriste(Bot):
                  Roubei essa frase de Nietzsche para parecer inteligente, mas meu conhecimento é pífio que nem minha vida.")
             print("")
         elif cmd == "4":
-            BotTriste.despedida()
+            self.despedida()
+            exit()
     
     def boas_vindas(self):
         print("")
