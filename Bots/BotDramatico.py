@@ -6,13 +6,13 @@ class BotDramatico(Bot):
         super().__init__(nome)
 
     def apresentacao(self):
-        print(f"Oi... Meu nome é {self._nome}. Como posso te ajudar? Não consigo te ajudar. O que queres de mim?")
+        print(f"Oi... Meu nome é {self.nome}. Como posso te ajudar? Não consigo te ajudar. O que queres de mim?")
     
     def mostra_comandos(self):
         print("1 - Bom dia")
         print("2 - Qual o seu nome ?")
-        print("3 - Qual seu conhecimento desbalanceado ?")
-        print("4 - Seus músculos são irradiantes. Vou pra academia, adeus!")
+        print("3 - Quero um conselho ?")
+        print("4 - Adeus")
     
     def executa_comando(self,cmd):
         if cmd == "1":
@@ -21,7 +21,7 @@ class BotDramatico(Bot):
             print("")
         elif cmd == "2":
             print("")
-            print(f"--> Eu já te disse meu nome, é {self._nome}, você já esqueceu de mim?")
+            print(f"--> Eu já te disse meu nome, é {self.nome}, você já esqueceu de mim?")
             print("")
         elif cmd == "3":
             print("")
