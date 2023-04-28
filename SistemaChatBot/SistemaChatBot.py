@@ -34,7 +34,8 @@ class SistemaChatBot:
         self.__bot.mostra_comandos()
 
     def le_envia_comando(self):
-        while True:
+        continuar = True
+        while continuar:
             self.__bot.mostra_comandos()
 
             comando_num = int(input('Digite o comando desejado (ou -1 para sair): '))
@@ -43,25 +44,37 @@ class SistemaChatBot:
                 break
 
             try:
-                self.__bot.executa_comando(str(comando_num))
+                continuar = self.__bot.executa_comando(str(comando_num))
             except IndexError:
                 raise IndexError('Comando não disponível not chatbot.')
-
+        
+    
     def inicio(self):
-        self.boas_vindas()
+        x = True
+        while x:
+            self.boas_vindas()
 
-        print()
+            print()
 
-        self.mostra_menu()
+            self.mostra_menu()
 
-        self.escolhe_bot()
+            self.escolhe_bot()
 
-        self.__bot.boas_vindas()
+            self.__bot.boas_vindas()
 
-        self.le_envia_comando()
-
-        self.__bot.despedida()
-
+            self.le_envia_comando()
+            
+            while True:
+                x = (input("Quer continuar? [Y/N]: ")).lower()
+                print()
+                if x == "n": 
+                    exit()
+                elif x != "y": 
+                    print("Digite uma forma válida")
+                    print()
+                else:    
+                    self.inicio()
+    
         ##mostra mensagem de boas-vindas do sistema
         ##mostra o menu ao usuário
         ##escolha do bot      

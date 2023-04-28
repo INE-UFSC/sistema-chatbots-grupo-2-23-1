@@ -30,7 +30,10 @@ class BotFeliz(Bot):
             print("")
         elif cmd == '4':
             self.despedida()
-            exit()
+            return False
+        return True
+
+            
 
     def boas_vindas(self):
         print()

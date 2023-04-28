@@ -1,12 +1,12 @@
 from Bots.Bot import Bot
 
 
-class BotMetrossexual(Bot):
+class BotDramatico(Bot):
     def __init__(self,nome):
         super().__init__(nome)
 
     def apresentacao(self):
-        print(f"Toma do double biceps do pai, pode me chamar de {self.nome}, mas você tchutchuca, pode me chamar todo dia.")
+        print(f"Oi... Meu nome é {self._nome}. Como posso te ajudar? Não consigo te ajudar. O que queres de mim?")
     
     def mostra_comandos(self):
         print("1 - Bom dia")
@@ -17,15 +17,15 @@ class BotMetrossexual(Bot):
     def executa_comando(self,cmd):
         if cmd == "1":
             print("")
-            print("--> Bom dia pra ken ??? Hahahaha, te peguei.")
+            print("--> Nunca será um bom dia...")
             print("")
         elif cmd == "2":
             print("")
-            print(f"--> Metrossexual de plástico, ou {self.nome}, as vezes amor da sua vida.")
+            print(f"--> Eu já te disse meu nome, é {self._nome}, você já esqueceu de mim?")
             print("")
         elif cmd == "3":
             print("")
-            print("--> Tome 1 grama de whey protein por kilo de massa corporal. Me agradeça depois.")
+            print("--> Desista, o mundo vai acabar mesmo, nada vale a pena...")
             print("")
         elif cmd == "4":
             self.despedida()
@@ -34,10 +34,10 @@ class BotMetrossexual(Bot):
     
     def boas_vindas(self):
         print("")
-        print("--> Tá saindo da jaula o monstro!")
+        print("--> Por que você me escolheu? Eu não sirvo pra nada, faço tudo errado...")
         print("")
 
     def despedida(self):
         print("")
-        print("--> Pode ir, sei que vai voltar. BIRL!")
+        print("--> Você já vai? Não precisa mais de mim? Então, até...")
         print("")
