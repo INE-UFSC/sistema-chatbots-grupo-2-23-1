@@ -17,17 +17,11 @@ class BotFeliz(Bot):
     
     def executa_comando(self,cmd):
         if cmd == '1':
-            print("")
-            print("--> Como posso ajudá-lo?")
-            print("")
+            print("Como posso ajudá-lo?")
         elif cmd == '2':
-            print("")
-            print(f"--> Meu nome é {self.nome}.")
-            print("")
+            print(f"Meu nome é {self.nome}.")
         elif cmd == '3':
-            print("")
-            print("--> Não tenha medo de ser você mesmo e vá em busca dos seus sonhos.")
-            print("")
+            print("Não tenha medo de ser você mesmo e vá em busca dos seus sonhos.")
         elif cmd == '4':
             self.despedida()
             return False
@@ -36,11 +30,7 @@ class BotFeliz(Bot):
             
 
     def boas_vindas(self):
-        print()
-        print(f"--> Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.")
-        print()
+        print(f"Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.")
 
     def despedida(self):
-        print()
-        print(f"--> Foi um prazer ajudar")
-        print()
+        print(f"Foi um prazer ajudar")
