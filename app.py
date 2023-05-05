@@ -1,12 +1,9 @@
 #encoding: utf-8
-from Bots.BotFeliz import BotFeliz
-from Bots.BotMetrossexual import BotMetrossexual
-from Bots.BotTriste import BotTriste
+from Bots.BotImplementacao import BotImpl
 from SistemaChatBot import SistemaChatBot as scb
-from Bots.BotDramatico import BotDramatico
 
 ###construa a lista de bots disponíveis aqui
-lista_bots = [BotMetrossexual("Ken"), BotTriste("Cleber"), BotFeliz("Reef"), BotDramatico("Josemildo")]
+lista_bots = [BotImpl("Ken", "metrossexual"), BotImpl("Cleber", "triste"), BotImpl("Reef", "feliz"), BotImpl("Josemildo", "dramatico")]
 
 sys = scb.SistemaChatBot("DezzBottz", lista_bots)
 sys.inicio()

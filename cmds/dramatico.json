@@ -1,0 +1,32 @@
+{
+    "apresentacao": {
+        "prompt": null,
+        "msg": "Oi... Meu nome é Josemildo. Como posso te ajudar? Não consigo te ajudar. O que queres de mim?",
+        "sair": false
+    },
+    "boas_vindas": {
+        "prompt": null,
+        "msg": "Por que você me escolheu? Eu não sirvo pra nada, faço tudo errado...",
+        "sair": false
+    },
+    "1": {
+        "prompt": "Bom dia",
+        "msg": "Nunca será um bom dia...",
+        "sair": false
+    },
+    "2": {
+        "prompt": "Qual o seu nome ?",
+        "msg": "Eu já te disse meu nome, é Josemildo, você já esqueceu de mim?",
+        "sair": false
+    },
+    "3": {
+        "prompt": "Quero um conselho ?",
+        "msg": "Desista, o mundo vai acabar mesmo, nada vale a pena...",
+        "sair": false
+    },
+    "4": {
+        "prompt": "Adeus",
+        "msg": "Você já vai? Não precisa mais de mim? Então, até...",
+        "sair": true
+    }
+}

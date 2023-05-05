@@ -1,0 +1,32 @@
+{
+    "apresentacao": {
+        "prompt": null,
+        "msg": "Sniff. Meu nome é Cleber e tenho tristeza crônica.",
+        "sair": false
+    },
+    "boas_vindas": {
+        "prompt": null,
+        "msg": "Fico tão contente que você me escolheu, finalmente vou falar com alguém!",
+        "sair": false
+    },
+    "1": {
+        "prompt": "Bom dia!!!",
+        "msg": "Sniff. Porque você esta tão feliz em uma terça feira de manhã ?",
+        "sair": false
+    },
+    "2": {
+        "prompt": "Qual o seu nome queridissimo ?",
+        "msg": "Talvez você não tenha escutado porque não falo alto por causa da ansiedade social, mas meu nome é Cleber.",
+        "sair": false
+    },
+    "3": {
+        "prompt": "Qual seu conhecimento desbalanceado ?",
+        "msg": "A solidão é, antes de mais nada, restauradora. Um descanso da vida social, dos deveres sociais, das máscaras que vestimos tantas vezes em público. Ela é necessária, para revigorar, repousar. Roubei essa frase de Nietzsche para parecer inteligente, mas meu conhecimento é pífio que nem minha vida.",
+        "sair": false
+    },
+    "4": {
+        "prompt": "Sua tristeza é irradiante. Adeus!",
+        "msg": "Não me deixe sozinho por favor!!!",
+        "sair": true
+    }
+}

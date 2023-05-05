@@ -18,8 +18,7 @@ class SistemaChatBot:
         print(f'Os chatbots disponíveis são:')
 
         for (i, bot) in enumerate(self.__lista_bots):
-            print(f'{i} - Bot: {bot.nome} - Apresentação: ', end='')
-            bot.apresentacao()
+            print(f'{i} - Bot: {bot.nome} - Apresentação: {bot.apresentacao()}')
 
     def escolhe_bot(self):
         escolha = int(input('Digite o número do bot desejado: '))
@@ -30,7 +29,6 @@ class SistemaChatBot:
         self.__bot = self.__lista_bots[escolha] 
 
     def mostra_comandos_bot(self):
-
         self.__bot.mostra_comandos()
 
     def le_envia_comando(self):
@@ -44,9 +42,12 @@ class SistemaChatBot:
                 break
 
             try:
-                print('\n--> ', end='')
-                continuar = self.__bot.executa_comando(str(comando_num))
-                print()
+                cmd = self.__bot.executa_comando(str(comando_num))
+
+                print(f'\n--> {cmd["msg"]}\n')
+                
+                if cmd['sair']:
+                    return
             except IndexError:
                 raise IndexError('Comando não disponível no chatbot.')
         
@@ -62,9 +63,7 @@ class SistemaChatBot:
 
             self.escolhe_bot()
 
-            print('\n--> ', end='')
-            self.__bot.boas_vindas()
-            print()
+            print(f'\n--> {self.__bot.boas_vindas()}\n')
 
             self.le_envia_comando()
             
@@ -78,10 +77,3 @@ class SistemaChatBot:
                     print()
                 else:    
                     self.inicio()
-    
-        ##mostra mensagem de boas-vindas do sistema
-        ##mostra o menu ao usuário
-        ##escolha do bot      
-        ##mostra mensagens de boas-vindas do bot escolhido
-        ##entra no loop de mostrar comandos do bot e escolher comando do bot até o usuário definir a saída
-        ##ao sair mostrar a mensagem de despedida do bot

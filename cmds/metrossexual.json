@@ -1,0 +1,32 @@
+{
+    "apresentacao": {
+        "prompt": null,
+        "msg": "Toma do double biceps do pai, pode me chamar de Ken, mas você tchutchuca, pode me chamar todo dia.",
+        "sair": false
+    },
+    "boas_vindas": {
+        "prompt": null,
+        "msg": "Tá saindo da jaula o monstro!",
+        "sair": false
+    },
+    "1": {
+        "prompt": "Bom dia",
+        "msg": "Bom dia pra ken ??? Hahahaha, te peguei.",
+        "sair": false
+    },
+    "2": {
+        "prompt": "Qual o seu nome ?",
+        "msg": "Metrossexual de plástico, ou Ken, as vezes amor da sua vida.",
+        "sair": false
+    },
+    "3": {
+        "prompt": "Qual seu conhecimento desbalanceado ?",
+        "msg": "Tome 1 grama de whey protein por kilo de massa corporal. Me agradeça depois.",
+        "sair": false
+    },
+    "4": {
+        "prompt": "Seus músculos são irradiantes. Vou pra academia, adeus!",
+        "msg": "Pode ir, sei que vai voltar. BIRL!",
+        "sair": true
+    }
+}

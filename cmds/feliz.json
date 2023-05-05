@@ -1,0 +1,32 @@
+{
+    "apresentacao": {
+        "prompt": null,
+        "msg": "Olá, sou o Reef e te amo!!!",
+        "sair": false
+    },
+    "boas_vindas": {
+        "prompt": null,
+        "msg": "Olá, pessoa maravilhosa. Estou muito feliz que você me escolheu.",
+        "sair": false
+    },
+    "1": {
+        "prompt": "Boas vindas.",
+        "msg": "Como posso ajudá-lo?",
+        "sair": false
+    },
+    "2": {
+        "prompt": "Qual o seu nome?",
+        "msg": "Meu nome é Reef.",
+        "sair": false
+    },
+    "3": {
+        "prompt": "Quero um conselho.",
+        "msg": "Não tenha medo de ser você mesmo e vá em busca dos seus sonhos.",
+        "sair": false
+    },
+    "4": {
+        "prompt": "Adeus.",
+        "msg": "Foi um prazer ajudar!",
+        "sair": true
+    }
+}
